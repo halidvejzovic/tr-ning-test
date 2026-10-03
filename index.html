@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Svampletarna - Inloggning</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div>
-        <p>
+    <main> 
 
-        </p>
-    </div>
-    
+        <header>
+            <h1>Logga in</h1>
+            <p>Fyll i dina uppgifter för att logga in på ditt konto</p>
+            <p>↓</p>
+        </header>
+
+        <form>
+            <label for="namn">Namn</label>
+            <input type="text" id="namn" placeholder="Ange ditt namn" name="namn" required>
+
+            <label for="lösenord">Lösenord</label>
+            <input type="password" id="lösenord" placeholder="Ange ditt lösenord" name="lösenord" ><br>
+
+            <input type="submit" value="Logga in">
+        </form>
+
+        <img src="bild.png" alt="Svampletarna"> 
+
+    </main>
 </body>
 </html>

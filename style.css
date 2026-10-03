@@ -1,0 +1,58 @@
+main{
+    display: grid;
+    gap: 10px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "img header"
+    "img form";
+
+}
+
+header{
+    grid-area: header;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid red;
+    background-color: aqua;
+    
+}
+
+img{
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border: 2px solid red;
+}
+
+form{
+    opacity: 0.6;
+    grid-area: form;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    place-items: center;
+    color: white;
+    background-color: lightgreen;
+    border-radius: 20px;
+    border: 2px solid red;
+    padding-bottom: 2rem;
+    
+}
+ 
+h1, p, label {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    font-weight: 700;
+    margin: auto;
+    
+}
+header :last-child {
+    font-size: 30px;
+}
